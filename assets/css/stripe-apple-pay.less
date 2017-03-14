@@ -45,38 +45,25 @@
 
 	.single-product {
 		div.product {
+			form.cart {
+				.quantity {
+					margin-right: .875em;
+				}
+
+				.quantity ~ .button {
+					float: none;
+				}
+			}
+
 			.apple-pay-button-wrapper {
 				display: inline;
 				margin-bottom: 0;
-				margin-right: 10px;
 			}
 
 			.apple-pay-button {
 				float: left;
 				max-width: 20%;
-				margin-left: 20px;
-			}
-		}
-
-		&.wc-stripe-legacy {
-			div.product {
-				form.cart {
-					display: flex;
-					align-items: flex-start;
-					align-content: flex-start;
-				}
-
-				.quantity {
-					order: 1;
-				}
-
-				.apple-pay-button-wrapper {
-					order: 2;
-				}
-
-				.single_add_to_cart_button {
-					order: 3;
-				}
+				margin-right: .875em;
 			}
 		}
 	}
